@@ -1,0 +1,31 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Удаление статьи
+{% endblock%}
+
+{% block content %}
+
+    <header class = "InGameNavigation">
+
+        <h3 id="hk_logo">Hollow knight</h3>
+        <ul id="hk_navigation">
+
+            <a href="{% url 'hollow_knight' %}"><li><i class="bi bi-house-heart"></i>Главная</li></a>
+            <a href="{% url 'hollow_knight' %}"><li>Локации</li></a>
+            <a href="{% url 'hollow_knight' %}"><li>Оружие</li></a>
+            <a href="{% url 'hollow_knight_characters' %}"><li>Персонажи</li></a>
+        </ul>
+        <a href="{% url 'home' %}" id="hk_login"><i class="bi bi-person-circle"></i>Войти</a>
+    </header>
+
+    <div class="features" id="hk_features">
+        <h1>Форма удаления статьи</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-success" type="submit">Удалить статью</button>
+        </form>
+    </div>
+
+{% endblock%}
+

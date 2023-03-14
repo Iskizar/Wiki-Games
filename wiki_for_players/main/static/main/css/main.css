@@ -1,0 +1,219 @@
+body {
+
+
+    background: #2c2c2c;
+}
+
+#hk_login, #index_login, #dead_cells_login, #index_register
+{
+    float: right;
+    position: relative;
+    text-decoration: none;
+    margin-left: auto;
+}
+.InGameNavigation
+{
+    position: relative;
+    background: #181818;
+    height: 120px;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 5px solid #4d4d4d;
+    display: flex;
+    align-items: baseline;
+
+}
+.InGameNavigation h2
+{
+
+    position: relative;
+    left: 35%;
+}
+#hk_logo, #hk_navigation, #hk_features, #hk_login
+{
+    font-family: Trajan Pro, serif;
+
+}
+.authorization
+{
+    margin-left: 55%;
+    margin-top: 10px;
+}
+
+.InGameNavigation h3
+{
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 0;
+    margin-right: 20px;
+}
+
+.InGameNavigation ul
+{
+    margin-left: auto;
+}
+.InGameNavigation ul li, #hk_login, #index_login, #dead_cells_login, #index_register
+{
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform .3s ease;
+    margin-right: 50px;
+    margin-left: auto;
+
+
+}
+
+#InGameNavigation ul li:hover, .InGameNavigation ul a:hover, .InGameNavigation  ul a, #hk_login:hover,
+#index_login:hover, #dead_cells_login:hover, #index_register:hover
+{
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+header h3
+{
+    float: left;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+aside
+{
+
+    position: absolute;
+    margin-top: 120px;
+    float: left;
+    background: #181818;
+    width: 15%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    border-bottom: 5px solid #4d4d4d;
+}
+
+aside img
+{
+    width: 100%;
+    height: 15%;
+    float: left;
+}
+aside .logo
+{
+    font-size: 25px;
+    margin-left: 17px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+aside h3
+{
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+aside ul li
+{
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .3s ease;
+}
+
+aside ul li:hover, aside ul a:hover, aside ul a
+{
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+main .features
+{
+
+    color: #fff;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 70%;
+}
+
+main .features h1{font-size: 40px}
+main .features p{font-size: 25px; max-width: 1000px; margin: 10px auto}
+
+.alert-warning
+{
+    color: #FFFFFF;
+    background-color:  #6A00A7;
+    float: left;
+    clear: both;
+    width: 550px;
+    margin: 20px 23%;
+    text-align: left;
+}
+.alert-warning h3
+{
+
+    text-align: center;
+}
+.alert-warning img
+{
+    width: 150px;
+    height: 15%;
+    display:block;
+    margin:auto;
+}
+.full_info
+{
+    color: #FFFFFF;
+    background-color: #222222;
+    line-height: 90px;
+    clear: both;
+    width: 800px;
+    margin: 30px 20%;
+    text-align: left;
+    border-width; 1px;
+    border-radius: 10px;
+    border-color: #5c36c4;
+    border-style: groove;
+    padding: 15px;
+
+}
+.full_info h1, h3
+{
+    text-align: center;
+}
+.full_info h4
+{
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+.full_info h5
+{
+    text-align: right;
+}
+.full_info img
+{
+    width: 350px;
+    height: 15%;
+    display:block;
+    margin:auto;
+}
+
+form
+{
+    margin-left:27%;
+    width: 500px;
+    margin-top: 50px;
+}
+.btn-success
+{
+    margin-bottom: 20px;
+}

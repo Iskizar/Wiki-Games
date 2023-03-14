@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Hollow Knight
+{% endblock%}
+
+{% block content %}
+
+<header class = "InGameNavigation">
+
+    <h3 id="hk_logo">Hollow knight</h3>
+    <ul class="hk_navigation">
+
+        <a href="{% url 'hollow_knight' %}"><li><i class="bi bi-house-heart"></i>Главная</li></a>
+        <a href="{% url 'hollow_knight' %}"><li>Локации</li></a>
+        <a href="{% url 'hollow_knight' %}"><li>Оружие</li></a>
+        <a href="{% url 'hollow_knight_characters' %}"><li>Персонажи</li></a>
+    </ul>
+    <ul class="hk_navigation">
+    <a href="{% url 'register' %}" id="index_register"><i class="bi bi-person-circle"></i>Регистрация</a>
+    <a href="{% url 'home' %}" id="hk_login"><i class="bi bi-person-circle"></i>Войти</a>
+    </ul>
+</header>
+
+<div class="features" id="hk_features">
+    <h1>Главная страница</h1>
+    <p>Hollow Knight — это захватывающая, красивая приключенческая игра в огромном подземном королевстве Халлоунест.
+        Двумерная игра с акцентом на умения и исследования позволяет вам сражаться с огромным множеством
+        смертоносных существ, избегая сложных ловушек и разгадывая древние загадки, прокладывая себе путь через
+        грибковые отходы, зелёные массивы и разрушенные подземные города.</p>
+
+</div>
+{% endblock%}
+

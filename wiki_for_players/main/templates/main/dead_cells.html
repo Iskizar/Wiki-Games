@@ -1,0 +1,29 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Dead Cells
+{% endblock%}
+
+
+
+{% block content %}
+<header class = "InGameNavigation">
+
+    <h3>Dead Cells</h3>
+    <ul >
+
+        <a href="{% url 'dead_cells' %}"><li><i class="bi bi-house-heart"></i>Главная</li></a>
+        <a href="{% url 'dead_cells' %}"><li>Локации</li></a>
+        <a href="{% url 'dead_cells' %}"><li>Оружие</li></a>
+    </ul>
+    <a href="{% url 'home' %}" id="dead_cells_login"><i class="bi bi-person-circle"></i>Войти</a>
+</header>
+
+
+<div class="features">
+    <h1>Главная страница</h1>
+    <p>Эта страница будет посвещена игре DeadCells!!!</p>
+
+</div>
+{% endblock%}
+

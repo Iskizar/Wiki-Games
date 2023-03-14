@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock%}
+
+{% block content %}
+<header class = "InGameNavigation">
+
+    <h2>Лучший Wiki на планете!</h2>
+    <div class="authorization">
+
+        <a href="{% url 'register' %}" id="index_register"><i class="bi bi-person-circle"></i>Регистрация</a>
+        <a href="{% url 'login' %}" id="index_login"><i class="bi bi-person-circle"></i>Войти</a>
+    </div>
+
+</header>
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>На этом сайте вы сможете получить новые знания о своих любимых играх.</p>
+        <p> А также, если захотите, то можете поделиться своими знаниями с другими людьми, редактируя статьи!</p>
+
+
+    </div>
+
+{% endblock%}
+

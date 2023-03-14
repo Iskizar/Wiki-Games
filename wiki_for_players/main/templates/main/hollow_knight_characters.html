@@ -1,0 +1,39 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Hollow Knight
+{% endblock%}
+
+{% block content %}
+
+<header class = "InGameNavigation">
+
+    <h3 id="hk_logo">Hollow knight</h3>
+    <ul id="hk_navigation">
+
+        <a href="{% url 'hollow_knight' %}"><li><i class="bi bi-house-heart"></i>Главная</li></a>
+        <a href="{% url 'hollow_knight' %}"><li>Локации</li></a>
+        <a href="{% url 'hollow_knight' %}"><li>Оружие</li></a>
+        <a href="{% url 'hollow_knight_characters' %}"><li>Персонажи</li></a>
+    </ul>
+    <a href="{% url 'home' %}" id="hk_login"><i class="bi bi-person-circle"></i>Войти</a>
+</header>
+
+<div class="features" id="hk_features">
+    <h1>Страница с персонажами</h1>
+    <p>Вот они! Персонажи!</p>
+    {% for el in articles %}
+        <div class="alert alert-warning">
+            <h3> {{ el.title }} </h3>
+            <img src = {{ el.logo }} alt="Лого">
+
+            <p> {{ el.anons}} <p>
+            <a href="{% url 'article_detail' el.id %}" class="btn btn-warning">Читать детально</a>
+
+        </div>
+    {%endfor%}
+    <a href="{% url 'create' %}"><button class="btn btn-info">Добавить запись</button></a>
+</div>
+
+{% endblock%}
+

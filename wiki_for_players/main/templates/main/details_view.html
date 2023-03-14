@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+{{article.title}}
+{% endblock%}
+
+{% block content %}
+
+    <header class = "InGameNavigation">
+
+        <h3 id="hk_logo">Hollow knight</h3>
+        <ul id="hk_navigation">
+
+            <a href="{% url 'hollow_knight' %}"><li><i class="bi bi-house-heart"></i>Главная</li></a>
+            <a href="{% url 'hollow_knight' %}"><li>Локации</li></a>
+            <a href="{% url 'hollow_knight' %}"><li>Оружие</li></a>
+            <a href="{% url 'hollow_knight_characters' %}"><li>Персонажи</li></a>
+        </ul>
+        <a href="{% url 'home' %}" id="hk_login"><i class="bi bi-person-circle"></i>Войти</a>
+    </header>
+
+    <div class="features" id="hk_features">
+         <div class="full_info">
+        <h1>{{ article.title }}</h1>
+        <img src = {{ article.logo }} alt="Лого">
+        <h3>{{ article.anons }}</h3>
+        <h4>{{ article.full_text }}</h4>
+        <h5>{{ article.date }}</h5>
+        <a href="{% url 'article_delete' article.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'article_update' article.id %}" class="btn btn-info">Редактировать</a>
+
+         </div>
+    </div>
+{% endblock%}
+
